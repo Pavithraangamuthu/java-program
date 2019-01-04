@@ -1,0 +1,22 @@
+import java.util.*;
+public class Main{
+
+     public static void main(String []args){
+      int t,c,i;
+      Scanner s1=new Scanner(System.in);
+      String a;
+      System.out.print("no of lines : ");
+      t=s1.nextInt();
+      while(t-->0){
+          c=0;
+          System.out.println("Enter String");
+          a=s1.next();
+          for(i=0;i<a.length()-1;i++){
+              if(a.charAt(i)==a.charAt(i+1))
+              c++;
+          }
+          System.out.println(a+" ---> No of deletion---> "+c);
+          
+      }
+     }
+}
